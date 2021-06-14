@@ -1,0 +1,15 @@
+int palindrome(char *s)
+{
+  int i = 0;
+  int j = strlen(s)-1;
+  while (j > i) {
+      if (s[i] != s[j]) {
+        printf("Not palindrome.\n");
+        return 0;
+      }
+      i++;
+      j--;
+  }
+  printf("Palindrome\n");
+  return 0;
+}
